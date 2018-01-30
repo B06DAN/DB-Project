@@ -14,15 +14,6 @@ AddItemDialog::~AddItemDialog()
     delete ui;
 }
 
-/*void AddItemDialog::SetPlayerData(const QString& id, const QString& age, const QString& weight, const QString& team, const QString& points)
-{
-    ui->idLineEdit->setText(id);
-    ui->ageLineEdit->setText(age);
-    ui->weightLineEdit->setText(weight);
-    ui->teamLineEdit->setText(team);
-    ui->pointsLineEdit->setText(points);
-}*/
-
 Player* AddItemDialog::CreatePlayer()
 {
 
