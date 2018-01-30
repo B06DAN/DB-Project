@@ -42,7 +42,7 @@ Player PlayerManager::ShowPlayers(QSqlDatabase db)
     query.prepare("SELECT * FROM Players");
     query.exec();
 
-    QString id = query.value("id").toString();
+    int id = query.value("id").toInt();
     int age = query.value("age").toInt();
     int weight = query.value("weight").toInt();
     QString team = query.value("team").toString();
@@ -61,7 +61,7 @@ std::vector<Player> PlayerManager::GetPlayers(QSqlDatabase db)
     std::vector<Player> players;
     while(query.next()) {
 
-        QString id = query.value("Id").toString();
+        int id = query.value("Id").toInt();
         int age = query.value("Age").toInt();
         int weight = query.value("Weight").toInt();
         QString team = query.value("Team").toString();
@@ -73,7 +73,7 @@ std::vector<Player> PlayerManager::GetPlayers(QSqlDatabase db)
     return players;
 }
 
-void PlayerManager::UpdatePoints(QSqlDatabase db, QString id, int points)
+void PlayerManager::UpdatePoints(QSqlDatabase db, int id, int points)
 {
     QSqlQuery query(db);
         query.prepare("UPDATE "
@@ -87,7 +87,7 @@ void PlayerManager::UpdatePoints(QSqlDatabase db, QString id, int points)
         query.exec();
 }
 
-void PlayerManager::RemovePlayer(QSqlDatabase db, QString id)
+void PlayerManager::RemovePlayer(QSqlDatabase db, int id)
 {
     QSqlQuery query(db);
     query.prepare("DELETE FROM Players WHERE Id = (:id)");

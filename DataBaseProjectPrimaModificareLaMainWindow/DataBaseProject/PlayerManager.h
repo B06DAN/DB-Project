@@ -16,8 +16,8 @@ public:
     PlayerManager();
     void CreateTable(QSqlDatabase db);
     void InsertPlayer(QSqlDatabase db, Player*);
-    void UpdatePoints(QSqlDatabase db, QString id, int points);
-    void RemovePlayer(QSqlDatabase db, QString id);
+    void UpdatePoints(QSqlDatabase db, int id, int points);
+    void RemovePlayer(QSqlDatabase db, int id);
     Player ShowPlayers(QSqlDatabase db);
     std::vector<Player> GetPlayers(QSqlDatabase db);
     Ranking *ranking;

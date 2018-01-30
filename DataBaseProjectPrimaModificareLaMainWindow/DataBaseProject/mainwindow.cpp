@@ -15,11 +15,11 @@ MainWindow::MainWindow(QWidget *parent) :
     m_addItem = new AddItemDialog(this);
     connect(ui->actionAddItems, &QAction::triggered, this, &MainWindow::onAddItem);
 
-    m_db = QSqlDatabase::addDatabase("QPSQL");
-    m_db.setHostName("horton.elephantsql.com");
-    m_db.setDatabaseName("hgyojooo");
-    m_db.setUserName("hgyojooo");
-    m_db.setPassword("nn8EKmmjdWlZIjOVPgK6lnRcK8enIt-K");
+    m_db = QSqlDatabase::addDatabase("QSQLITE");
+    m_db.setHostName("localhost");
+    m_db.setDatabaseName("database.db");
+    m_db.setUserName("jnzdnjdu");
+    m_db.setPassword("e3aDPhYnK4OQLGM4Bgh4h4zzeY0DdGm_");
 
     m_db.open();
 

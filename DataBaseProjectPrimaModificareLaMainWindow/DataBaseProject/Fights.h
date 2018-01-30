@@ -35,7 +35,7 @@ public:
     void SimulateFight(QSqlDatabase db, std::vector<Player> &players);
     void on_playRoundButton_clicked(QSqlDatabase db);
     void PrepareForFights(std::vector<Player> &players);
-    void UpdatePoints(QSqlDatabase db, QString id, int points);
+    void UpdatePoints(QSqlDatabase db, int id, int points);
 private slots:
     void on_back_clicked();
     void UpdateTable(std::vector<Player> &players);

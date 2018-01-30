@@ -32,7 +32,7 @@ Player* AddItemDialog::CreatePlayer()
     QString team = ui->teamLineEdit->text();
     QString points = ui->pointsLineEdit->text();
 
-    Player* player = new Player(id, age.toInt(), weight.toInt(), team, points.toInt());
+    Player* player = new Player(id.toInt(), age.toInt(), weight.toInt(), team, points.toInt());
     return player;
 }
 
@@ -47,18 +47,18 @@ void AddItemDialog::showEvent(QShowEvent*)
 
 void AddItemDialog::accept()
 {
-//    bool id = true;
+    bool id = true;
     bool age = true;
     bool weight = true;
     bool points = true;
 
-//    int input = ui->idLineEdit->text().toInt(&id);
+    int input = ui->idLineEdit->text().toInt(&id);
 //    if(!id)
 //    {
 //        QMessageBox::warning(this, tr("add item error"), tr("Name should be a number!"));
 //    }
 
-    int input = ui->ageLineEdit->text().toInt(&age);
+    input = ui->ageLineEdit->text().toInt(&age);
     if(!age)
     {
         QMessageBox::warning(this, tr("add item error"), tr("Age should be a number!"));

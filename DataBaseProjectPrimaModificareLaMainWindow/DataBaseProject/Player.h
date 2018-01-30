@@ -5,14 +5,14 @@
 class Player
 {
 public:
-    QString m_id;
+    int m_id;
     int m_points;
     int m_age;
     int m_weight;
     QString m_team;
 
 
-    Player(QString id, int age, int weight, QString team, int points);
+    Player(int id, int age, int weight, QString team, int points);
 
 
 };

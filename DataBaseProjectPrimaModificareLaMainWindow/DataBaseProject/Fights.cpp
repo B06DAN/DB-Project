@@ -25,7 +25,7 @@ void fights::ShowTable(QSqlDatabase db)
     query.exec();
 
     while(query.next()) {
-        QString id = query.value("Id").toString();
+        int id = query.value("Id").toInt();
         int age = query.value("Age").toInt();
         int weight = query.value("Weight").toInt();
         QString team = query.value("Team").toString();
@@ -55,8 +55,8 @@ void fights::ShowTable(QSqlDatabase db)
     for(int i=0; i<players.size(); i++)
     {
 
-        QString _id = players.at(i).m_id;
-//        QString _id = QString::number(id);
+        int id = players.at(i).m_id;
+        QString _id = QString::number(id);
 
         if(players.at(i).m_age >= 12 && players.at(i).m_age < 16 ){
             if(players.at(i).m_weight >= 40 && players.at(i).m_weight < 60){
@@ -190,7 +190,7 @@ void fights::on_playRoundButton_clicked(QSqlDatabase db)
     }
 }
 
-void fights::UpdatePoints(QSqlDatabase db, QString id, int points)
+void fights::UpdatePoints(QSqlDatabase db, int id, int points)
 {
     QSqlQuery query(db);
         query.prepare("UPDATE "
@@ -218,14 +218,14 @@ void fights::SimulateFight(QSqlDatabase db, std::vector<Player> &players)
         while(i < actualSize){
             random = qrand() % 2;
             if(random == 0){
-                UpdatePoints(db, players.at(i).m_id, players.at(i).m_points+2);
-                UpdatePoints(db, players.at(i+1).m_id, players.at(i+1).m_points+1);
+                UpdatePoints(db, players.at(i).m_id, players.at(i).m_points +2);
+                UpdatePoints(db, players.at(i+1).m_id, players.at(i+1).m_points +1);
 
                 playersTemp.push_back(players.at(i));
             }
             else{
-                UpdatePoints(db, players.at(i).m_id, players.at(i).m_points+1);
-                UpdatePoints(db, players.at(i+1).m_id, players.at(i+1).m_points+2);
+                UpdatePoints(db, players.at(i).m_id, players.at(i).m_points +1);
+                UpdatePoints(db, players.at(i+1).m_id, players.at(i+1).m_points +2);
                 playersTemp.push_back(players.at(i+1));
             }
                 i += 2;
@@ -249,8 +249,8 @@ void fights::UpdateTable(std::vector<Player> &players)
     if(players.size() >= 1){
        for(int i=0; i<players.size(); i++)
        {
-//            QString _id = players.at(i).m_id;
-            QString _id = id;
+            int id = players.at(i).m_id;
+            QString _id = QString::number(id);
             int rowCount ;
 
             if(players.at(i).m_age >= 12 && players.at(i).m_age < 16 ){

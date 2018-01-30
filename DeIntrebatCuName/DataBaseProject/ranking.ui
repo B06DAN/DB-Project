@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ranking</class>
+ <widget class="QDialog" name="Ranking">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ranking</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="Categoria1216">
+        <attribute name="title">
+         <string>12ani-16ani</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QTabWidget" name="Category">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="_40_60">
+            <attribute name="title">
+             <string>40kg-60kg</string>
+            </attribute>
+            <widget class="QTableWidget" name="table1_1">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>631</width>
+               <height>381</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="columnCount">
+              <number>5</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Id</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Age</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Weight</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Team</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Points</string>
+              </property>
+             </column>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="_60_80">
+            <attribute name="title">
+             <string>60kg-80kg</string>
+            </attribute>
+            <widget class="QTableWidget" name="table1_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>641</width>
+               <height>381</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="columnCount">
+              <number>5</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Id</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Age</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Weight</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Team</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Points</string>
+              </property>
+             </column>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="_80_100">
+            <attribute name="title">
+             <string>80kg-100kg</string>
+            </attribute>
+            <widget class="QTableWidget" name="table1_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>641</width>
+               <height>391</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="columnCount">
+              <number>5</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Id</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Age</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Weight</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Team</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Points</string>
+              </property>
+             </column>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="Categoria1620">
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <attribute name="title">
+         <string>16ani-20ani</string>
+        </attribute>
+        <widget class="QTabWidget" name="Category_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>638</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="_40_60">
+          <attribute name="title">
+           <string>40kg-60kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table2_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>631</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="_60_80">
+          <attribute name="title">
+           <string>60kg-80kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table2_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>641</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="_80_100">
+          <attribute name="title">
+           <string>80kg-100kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table2_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>631</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Categoria2024">
+        <attribute name="title">
+         <string>20ani-24ani</string>
+        </attribute>
+        <widget class="QTabWidget" name="Category_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>638</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="_40_60">
+          <attribute name="title">
+           <string>40kg-60kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table3_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>631</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="_60_80">
+          <attribute name="title">
+           <string>60kg-80kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table3_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>641</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="_80_100">
+          <attribute name="title">
+           <string>80kg-100kg</string>
+          </attribute>
+          <widget class="QTableWidget" name="table3_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>641</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="columnCount">
+            <number>5</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Team</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Points</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="Cancel">
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

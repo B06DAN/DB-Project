@@ -8,7 +8,9 @@ class Database
 
 public:
     QSqlDatabase m_db;
+
     Database();
+
     static Database& GetInstance()
     {
         static Database * instance = 0;

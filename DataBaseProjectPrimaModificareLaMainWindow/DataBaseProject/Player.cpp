@@ -1,7 +1,7 @@
 #include "Player.h"
 
 
-Player::Player(QString id, int age, int weight, QString team, int points)
+Player::Player(int id, int age, int weight, QString team, int points)
 {
     m_id = id;
     m_points = points;

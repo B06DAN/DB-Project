@@ -27,7 +27,7 @@ void Ranking::UpdateTable(QSqlDatabase db) //ii pune in vector
 
     while(query.next()) {
 
-        QString id = query.value("Id").toString();
+        int id = query.value("Id").toInt();
         int age = query.value("Age").toInt();
         int weight = query.value("Weight").toInt();
         QString team = query.value("Team").toString();
@@ -51,8 +51,8 @@ void Ranking::UpdateTable(QSqlDatabase db) //ii pune in vector
     {
         //qDebug() << players.at(i).m_points << " ";
 
-        QString _id = players.at(i).m_id;
-//        QString _id = QString::number(id);
+        int id = players.at(i).m_id;
+        QString _id = QString::number(id);
         int age = players.at(i).m_age;
         QString _age = QString::number(age);
         int weight = players.at(i).m_weight;
